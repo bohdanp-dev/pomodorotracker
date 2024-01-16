@@ -1,14 +1,14 @@
 import {useContext, useEffect, useRef, useState} from "react";
-import {DEFAULT_BREAK_TIME, DEFAULT_POMODORO_TIME} from "../utils/constants";
+import {DEFAULT_BREAK_TIME, DEFAULT_POMODORO_TIME} from "../../utils/constants";
 import classNames from "classnames";
 import StopwatchCSS from './Stopwatch.module.css';
 import {Icon} from "@iconify/react";
-import Modal from "./Modal";
-import sound from "../assets/ClockAlarm.mp3"
-import ThemeContext from "../context/ThemeContext";
+import Modal from "../Modal";
+import sound from "../../assets/ClockAlarm.mp3"
+import ThemeContext from "../../context/ThemeContext";
 import TimerDisplay from "./TimerDisplay";
 import TimerControls from "./TimerControls";
-import SettingsIcon from "./SettingsIcon";
+import SettingsIcon from "../SettingsIcon";
 import PhaseDisplay from "./PhaseDisplay";
 
 const POMODORO_TIMER_TYPE = 'pomodoro';

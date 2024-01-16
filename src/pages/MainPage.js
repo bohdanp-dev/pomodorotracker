@@ -1,4 +1,4 @@
-import Stopwatch from "../components/Stopwatch";
+import Stopwatch from "../components/Stopwatch/Stopwatch";
 import TodoList from "../components/TodoList";
 import classNames from "classnames";
 import MainPageCSS from './MainPage.module.css';

@@ -60,10 +60,10 @@
     background-color: black !important;
 }
 .fullWidthLine{
-    border: none; /* Removes the default border */
-    height: 1px; /* You can set the height you want */
-    background-color: black; /* Sets the background color to black */
-    margin: 0; /* Removes default margin to ensure it reaches the edges */
+    border: none;
+    height: 1px;
+    background-color: black;
+    margin: 0;
 }
 label{
     font-size: 20px;

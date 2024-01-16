@@ -1,5 +1,5 @@
 import classNames from "classnames";
-import StopwatchCSS from './Stopwatch.module.css';
+import StopwatchCSS from './Stopwatch/Stopwatch.module.css';
 import {Icon} from "@iconify/react";
 
 const SettingsIcon = ({ handleOpenModal }) => {
