@@ -4,6 +4,7 @@ import ModalCSS from './Modal.module.css';
 import classNames from "classnames";
 import {Icon} from "@iconify/react";
 
+
 const Modal = ({pomodoroTime, breakTime, setBreakTime, setPomodoroTime,onClose}) =>{
     const [newPomodoroTime, setNewPomodoroTime] = useState(Number(pomodoroTime));
     const [newBreakTime, setNewBreakTime] = useState(Number(breakTime));

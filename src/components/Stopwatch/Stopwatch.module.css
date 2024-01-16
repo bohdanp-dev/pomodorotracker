@@ -66,6 +66,9 @@
     margin: 0.25rem;
     font-size: 24px;
 }
+.innerDivSettingsIcon{
+    display:inline-block;
+}
 
 
 .counter {
@@ -96,6 +99,8 @@
     }
 }
 
+
+
 /* Adjustments for larger screens */
 @media screen and (min-width: 701px) {
     .settingsIcon {
@@ -108,9 +113,9 @@
         border-radius: 12px;
     }
 
-    .settingsIcon:hover{
+    /*.settingsIcon:hover{
         animation: roll 2s infinite linear;
-    }
+    }*/
 }
 
 /* Adjustments for very small screens, less than 380px */
