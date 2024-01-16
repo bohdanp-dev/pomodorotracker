@@ -1,0 +1,77 @@
+.modalContainer {
+    width: 90%;
+    max-width: 300px;
+    border-radius: 10px;
+    margin:0 auto;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.75);
+}
+.horizontalFlexContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.closeSettingsIcon{
+    align-self: center;
+    justify-self: center;
+    color:black;
+    margin-left: auto;
+    margin-right: 8px;
+    font-size: 26px;
+}
+
+.modalContainerItem {
+    margin: 8px;
+}
+.overflowHidden{
+    overflow: hidden;
+}
+.overlay{
+    background-color: rgba(0,0,0,0.2);
+    position:fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.modalInput{
+    border-radius: 4px;
+    font-size: 24px;
+    background-color: #efefef;
+}
+.acceptButton{
+    max-width: 150px;
+    padding: 0.5rem;
+    background-color: #525252 !important;
+    color: #FFFFFF !important;
+    justify-self: center;
+    align-self: center;
+}
+.acceptButton:hover{
+    background-color: black !important;
+}
+.fullWidthLine{
+    border: none; /* Removes the default border */
+    height: 1px; /* You can set the height you want */
+    background-color: black; /* Sets the background color to black */
+    margin: 0; /* Removes default margin to ensure it reaches the edges */
+}
+label{
+    font-size: 20px;
+}
+
+
+@media screen and (min-width: 701px) {
+    .closeSettingsIcon:hover{
+        color: red;
+    }
+}

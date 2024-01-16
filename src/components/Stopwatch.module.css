@@ -1,0 +1,137 @@
+.containerStopwatch {
+    padding: 1rem 1rem 2rem;
+    margin-top: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.buttonStopwatch{
+    padding: .75rem 1rem;
+}
+.buttonContainer{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    gap: 10px;
+}
+.startStopGrid{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+}
+.gridStartButton{
+    grid-area: 1 / 2 / 2 / 5;
+    width: 150px;
+    justify-self: center;
+}
+.gridStopButton{
+    grid-area: 1 / 5 / 2 / 6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.phaseGrid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1fr;
+}
+.gridPomodoroPhase {
+    grid-area: 1 / 2 / 2 / 4;
+}
+.gridBreakPhase {
+    grid-area: 1 / 4 / 2 / 6;
+}
+.phaseDiv{
+    align-self: center;
+    justify-self: center;
+    font-size: 24px;
+    padding: 0.4rem;
+    border: 1px solid darkgray;
+    border-radius: 5px;
+    color: darkgray;
+}
+.phaseDivActive{
+    border-color: white;
+    color: white;
+}
+
+.horizontalMargin10{
+    margin: 0 10px;
+}
+
+.settingsIcon {
+    align-self: start;
+    margin: 0.25rem;
+    font-size: 24px;
+}
+
+
+.counter {
+    padding: 1rem;
+    font-size: 60px;
+    font-family: "Calibri";
+}
+
+.borderOval {
+    border-radius: 18px;
+}
+
+.flipIcon180{
+    rotate: 180deg;
+}
+
+.nextPhaseIcon{
+    align-self: center;
+    font-size: 16px;
+}
+
+@keyframes roll {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Adjustments for larger screens */
+@media screen and (min-width: 701px) {
+    .settingsIcon {
+        font-size: 36px;
+    }
+    .counter {
+        font-size: 130px;
+    }
+    .borderOval {
+        border-radius: 12px;
+    }
+
+    .settingsIcon:hover{
+        animation: roll 2s infinite linear;
+    }
+}
+
+/* Adjustments for very small screens, less than 380px */
+@media screen and (max-width: 379px) {
+    .containerStopwatch {
+        padding: 0.5rem; /* Reduce padding for smaller screens */
+    }
+    .buttonStopwatch {
+        padding: 0.5rem 0.75rem; /* Adjust button size for smaller screens */
+    }
+    .phaseDiv{
+        align-self: center;
+        justify-self: center;
+        font-size: 18px;
+        padding: 0.2rem;
+        border: 1px solid grey;
+        border-radius: 5px;
+        color: grey;
+    }
+    .phaseDivActive{
+        border-color: white;
+        color: white;
+    }
+}

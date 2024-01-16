@@ -1,0 +1,53 @@
+.containerTodo {
+    background-color: #FFFFFF;
+    margin-top: 4px;
+    padding: 0.5rem;
+    display: flex;
+    font-size: 16px;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 5px;
+}
+.todoTextContainer{
+    width: 440px;
+    margin: 0 5px;
+    word-wrap: anywhere;
+    color: black;
+    border-radius: 8px;
+    border-color: #525252;
+    border-width: 3px;
+}
+.borderRadius{
+    border-radius: 18px;
+}
+.completedTodo{
+    text-decoration: line-through;
+}
+.deleteButton{
+    color: darkgray;
+    font-size: 24px;
+    cursor: pointer; /* Keep the pointer cursor to maintain affordance */
+    margin-left: auto;
+}
+
+.doneIcon{
+    font-size: 24px;
+    cursor: pointer; /* Keep the pointer cursor to maintain affordance */
+    color: limegreen;
+}
+
+.doneIconCompleted{
+    color: black;
+}
+
+@media screen and (min-width: 701px) {
+    .doneIcon:hover{
+        color: darkgray;
+    }
+    .deleteButton:hover{
+        color:red;
+    }
+    .borderRadius{
+        border-radius: 8px;
+    }
+}

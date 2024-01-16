@@ -1,38 +1,70 @@
-.App {
-  text-align: center;
+html{
+    font-family: "Inter var", sans-serif;
+}
+.container {
+    width: 100%;
+    max-width: 500px;
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.border-oval {
+    border-radius: 5px;
+}
+.button-primary {
+    background-color: #FFFFFF;
+    border: 0;
+    border-radius: .5rem;
+    box-sizing: border-box;
+    font-size: .875rem;
+    font-weight: 600;
+    line-height: 1.25rem;
+    text-align: center;
+    color: black;
+    text-decoration: none #D1D5DB solid;
+    text-decoration-thickness: auto;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+.text-color-secondary{
+    color: #525252
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.button-primary:hover {
+    background-color: rgb(249,250,251);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.button-primary:focus {
+    outline: 2px solid transparent;
+    outline-offset: 2px;
 }
 
-.App-link {
-  color: #61dafb;
+.button-primary:focus-visible {
+    box-shadow: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.primary-color{
+    color: #FFFFFF;
+    background-color: #BA4945;
+}
+.secondary-color{
+    color: #FFFFFF;
+    background-color: #C15C5F;
+}
+.primary-color-alt{
+    color: #FFFFFF;
+    background-color: #38858F;
+}
+.secondary-color-alt{
+    color: #FFFFFF;
+    background-color: #4C919F;
+}
+
+.primary-color, .secondary-color, .primary-color-alt, .secondary-color-alt {
+    transition: background-color 0.5s ease;
+}
+:root{
+    background-color: yellow;
 }
