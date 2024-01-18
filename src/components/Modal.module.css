@@ -70,7 +70,7 @@ label{
 }
 
 
-@media screen and (min-width: 701px) {
+@media screen and (min-width: 768px) {
     .closeSettingsIcon:hover{
         color: red;
     }

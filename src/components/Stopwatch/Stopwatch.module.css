@@ -101,8 +101,7 @@
 
 
 
-/* Adjustments for larger screens */
-@media screen and (min-width: 701px) {
+@media screen and (min-width: 768px) {
     .settingsIcon {
         font-size: 36px;
     }

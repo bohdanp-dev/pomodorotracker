@@ -40,7 +40,7 @@
     color: black;
 }
 
-@media screen and (min-width: 701px) {
+@media screen and (min-width: 768px) {
     .doneIcon:hover{
         color: darkgray;
     }
