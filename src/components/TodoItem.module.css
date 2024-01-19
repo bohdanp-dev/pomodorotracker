@@ -26,13 +26,13 @@
 .deleteButton{
     color: darkgray;
     font-size: 24px;
-    cursor: pointer; /* Keep the pointer cursor to maintain affordance */
+    cursor: pointer;
     margin-left: auto;
 }
 
 .doneIcon{
     font-size: 24px;
-    cursor: pointer; /* Keep the pointer cursor to maintain affordance */
+    cursor: pointer;
     color: limegreen;
 }
 
@@ -41,13 +41,15 @@
 }
 
 @media screen and (min-width: 768px) {
+    .borderRadius{
+        border-radius: 8px;
+    }
+}
+@media (hover: hover) and (pointer: fine) {
     .doneIcon:hover{
         color: darkgray;
     }
     .deleteButton:hover{
         color:red;
-    }
-    .borderRadius{
-        border-radius: 8px;
     }
 }
